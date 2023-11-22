@@ -1,0 +1,29 @@
+NikeConvert
+
+NikeConvert is a command-line application designed to automate the reformatting of data exported from a Nike Triax Elite exercise watch. The exported data typically includes information about laps, workout details, and sample data.
+
+
+Features
+Data Transformation: NikeConvert takes the exported text file as input and transforms it into a more structured and usable format.
+Flexible Output: You can choose to export the transformed data as a single combined CSV file or as individual CSV files for laps, workout details, and sample data.
+
+Running the Application
+Open a command prompt or terminal.
+Navigate to the directory containing the NikeConvert.exe file.
+
+Command Syntax:
+NikeConvert.exe <inputFilePath> <outputPath> [-s]
+<inputFilePath>: Path to the exported text file from the Nike Triax Elite watch.
+<outputPath>: Directory where the transformed CSV files will be saved.
+
+[-s]: (Optional) Save the transformed data as a single combined CSV file.
+
+Examples:
+To transform data and save individual CSV files:
+NikeConvert.exe "C:\path\to\exportedData.txt" "C:\path\to\outputDirectory"
+
+To transform data and save as a single combined CSV file:
+NikeConvert.exe "C:\path\to\exportedData.txt" "C:\path\to\outputDirectory" -s
+
+Output:
+Transformed CSV files will be saved in the specified output directory with filenames like LapData_<date>.csv, WorkoutDetails_<date>.csv, and SampleData_<date>.csv.
